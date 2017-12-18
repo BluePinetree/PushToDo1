@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:orientation="vertical"
+    tools:context="com.bluepinetree.pushtodo.MainActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="PushTodo"
+            android:textColor="@android:color/white"
+            android:textSize="20dp">
+        </TextView>
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.88"
+        android:orientation="vertical">
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:id="@+id/swipeRefresh">
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/itemList"
+            android:layout_weight="1"
+            android:choiceMode="singleChoice"
+            android:listSelector="@color/colorPrimaryDark">
+        </ListView>
+        </android.support.v4.widget.SwipeRefreshLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.12"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/mdButton"
+            style="@android:style/Widget.DeviceDefault.Light.Button.Toggle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="0.35"
+            android:src="@drawable/ic_mode_edit_white_24dp"
+            app:backgroundTint="@android:color/darker_gray" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/rmButton"
+            style="@android:style/Widget.DeviceDefault.Light.Button.Toggle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="0.35"
+            android:src="@drawable/ic_delete_white_24dp"
+            app:backgroundTint="@android:color/darker_gray" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/ic_add_white_24dp"
+            app:backgroundTint="@android:color/darker_gray" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Swipe to Refresh"
+            android:textSize="20dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            />
+        </LinearLayout>
+
+    </LinearLayout>

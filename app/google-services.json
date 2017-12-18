@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "324610116576",
+    "firebase_url": "https://pushtodo-86571.firebaseio.com",
+    "project_id": "pushtodo-86571",
+    "storage_bucket": "pushtodo-86571.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:324610116576:android:4d04558bdb0a2b2c",
+        "android_client_info": {
+          "package_name": "com.bluepinetree.pushtodo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "324610116576-gb4f9k57n31tbc2je75djh26l31mnjkd.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.bluepinetree.pushtodo",
+            "certificate_hash": "8995079d47c1c10917a50f3a14b81613f70ec989"
+          }
+        },
+        {
+          "client_id": "324610116576-fod2uf3reu8si9gf5jbkrdbbpj3p3bvv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA8X0y9nSQafLFHahviB6kCWTdRgHE7cJQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "324610116576-fod2uf3reu8si9gf5jbkrdbbpj3p3bvv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
